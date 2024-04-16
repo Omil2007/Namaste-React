@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+</head>
+<body>
+    <h3>Complex Form</h3>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <lable for="name">Name:</lable>
+            <input type="text" id="name" name="name">
+            <br><br> 
+            <lable for="email">Email:</lable>
+            <input type="email" id="email" name="email"> 
+            <br><br> 
+            <lable for="phone">Phone:</lable>
+            <input type="number" id="phone" name="phone">
+            <br><br> 
+            <lable for="dob">Date of Birth:</lable>
+            <input type="date" id="dob" name="dob">
+            <br><br> 
+            <lable for="gender">Gender:</lable>
+            <lable for="male">Male</lable>
+            <input type="radio" id="male" name="gender">
+            <lable for="male">Female</lable>
+            <input type="radio" id="female" name="gender">
+            <br><br> 
+            <select id="select" name="select">
+                <option value="">select country</option>
+                <option value="India">India</option>
+                <option value="Bharat">Bharat</option>
+                <option value="Akhand Bharat">Akhand Bharat</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <lable for="street">Street:</lable>
+            <input type="text" id="street" name="street">
+            <br><br> 
+            <lable for="city">City:</lable>
+            <input type="text" id="city" name="city">
+            <br><br> 
+            <lable for="state">State:</lable>
+            <input type="text" id="state" name="state">
+            <br><br> 
+            <lable for="zip-code">Zip-Code:</lable>
+            <input type="number" id="zip-code" name="zip-code">
+            <br><br>  
+        </fieldset>
+        <fieldset>
+            <legend>Other Info</legend>
+            <lable for="comments">Commments:</lable>
+            <br>
+            <textarea id="comments" rows="3" cols="20"></textarea>
+            <br><br>
+            <input type="checkbox" id="terms" name="terms">
+            <lable for="terms">I agree to the terms of service</lable>
+        </fieldset>
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

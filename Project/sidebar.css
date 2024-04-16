@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    background-color: rgb(40, 40, 40);
+}
+
+.sidebar {
+    width: 20vw;
+    height:100vh;
+    background-color: #171616;
+    display:flex;
+    justify-content:space-between;
+    flex-direction: column;
+    color: white;
+    font-size: small;
+}
+.SBheader{
+    background-color: rgb(7, 7, 7);
+    height:10%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; }
+.SBheader select {
+    background-color:black;
+    color:white;
+    padding:3px;
+    margin:3px;
+    width:60%;
+    height:80%;   
+    border-radius: 5%;
+    border:1px solid black;
+}
+.SBheader img{
+    border-radius: 25%;
+    margin:0px;
+    height:20px;
+    margin:5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.SBcontent{
+    /* border:1px solid; */
+    overflow: auto;
+    width:100%;
+    margin:6px;
+    /* display:flex;
+    justify-content: space-between; */
+}
+.SBcontent::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Set the background color of the scrollbar thumb */
+    border-radius: 6px; /* Optional: Add rounded corners to the scrollbar thumb */
+}
+
+.SBcontent::-webkit-scrollbar-track {
+    background-color: #ce1919; /* Set the background color of the scrollbar track */
+}
+td {
+    font-size: smaller;
+    color: white;
+    padding: 15px 1px;
+    margin:auto;
+}
+.SBfooter{
+    background-color: rgb(7, 7, 7);
+    height:4%;
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    padding:2px;
+    font-size: small;
+    font-weight: 800;
+}
+.SBfooter img{
+    height:80%;
+    margin:2px;
+    border:1px solid;
+}

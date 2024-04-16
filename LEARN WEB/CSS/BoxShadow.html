@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --P-Color:black;
+            --custom-width:330px;
+                    /*here we stored some important info in variable and if we wnat access we can use variable and can change the data anytime*/
+        }
+        .container{
+            background-color: bisque;
+            height:650px;
+            border:2px solid var(--P-Color);
+            /*here defining the variable*/
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .box{
+            background-color:cadetblue;
+            width:var(--custom-width);
+            height:330px;
+            border:2px solid var(--P-Color);
+            margin:5px;
+            padding:5px;
+                    /*box shadow creates the shadow of the box*/
+            /* box-shadow: 10px 30px black;  */
+            /* box-shadow: -20px 40px black; */
+                    /*here shadow forms on the basis of x and y parameters[(x,y)(-x,y)(-x,-y)(x,-y)]*/
+            box-shadow: 10px 20px 30px black;
+                    /*here third parameter(30) denotes the blur effect */
+            /* box-shadow: inset 10px 20px yellowgreen; */
+                    /*(inset) forms the shadoe inside the box*/
+            box-shadow: 10px 20px coral, 20px 30px steelblue,30px 40px black;
+                    /*adding multiple shadows*/
+
+        }
+        .head{
+            text-shadow: 5px 2px 2px white;
+                    /*text shadow*/
+                    /*types of text shadow syntax*/
+            /* text-shadow: yellow 5px 2px 2px;
+            text-shadow: white 5px 2px 3px;
+            text-shadow: 12px 13px; */
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="jamwal.jpg" alt="reload">
+            <h2 class="head">Blah Blah</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorem asperiores provident repellat voluptate neque doloribus voluptas alias maiores. Laborum inventore ullam suscipit blanditiis ipsam hic nobis voluptates saepe doloremque!</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        div{
+            border:solid black 2px;
+        }
+        .container{
+            position:relative;
+            height:800px;
+        }
+        img{
+            margin:15px;         
+        }
+        .img2{
+                    /*with positioning u can overlap a data on other data or can move it */
+            /* position:relative; */
+                    /*in relative gap is maintained even after moving*/
+            /* top:300px;
+            right:200px; 
+            left:100px; */
+
+            position:absolute;
+                    /*In absolute gap is also removed*/
+            top:50px;
+        }
+        .img4{
+            position:fixed; 
+                    /*In fixed the image get fixed to a position even after scrolling throughout window */
+        }
+        .img3{
+            position:sticky;
+            top:20px;
+                /*Sticky works same as fixed but it is only limited to the parent container*/
+                /*to use sticky u have to deine its placement (top,right,bottom,left) , defining one of them would work as well*/
+        }
+    </style>
+</head>
+<body>
+                <!-- relative positioning moves an element relative to its default position on the page, while absolute positioning moves an element relative to its nearest positioned ancestor -->
+    <div class="container">
+        
+        <img 
+        src="ClassicBen10.jpg" 
+        alt="Ben10"
+        width="120px"
+        height="80px"
+        class="img1"
+        >
+        <img 
+        src="AlienForce.jpg" 
+        alt="Ben10"
+        width="120px"
+        height="80px"
+        class="img2"
+        >
+        <img 
+        src="UltimateAlien.jpg" 
+        alt="Ben10"
+        width="120px"
+        height="80px"
+        class="img3"
+        >
+        <img 
+        src="photo.jpeg" 
+        alt="Ben10"
+        width="120px"
+        height="80px"
+        class="img4"
+        >
+    </div>
+    <div class="container">
+        
+    </div>
+</body>
+</html>

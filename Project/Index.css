@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height:100%;
+    width:100%;
+    background-color: rgb(16, 16, 16);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgb(107, 166, 183);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:large;
+}
+.start-content {
+    border:1px solid;
+    margin:10px;
+    padding: 10px;
+}
+.end-content {
+    border:1px solid;
+    margin:10px;
+    padding: 10px;
+}
+.buttonStart{
+    margin:10px;
+}
+.buttonEnd{
+    margin:10px;
+}

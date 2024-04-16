@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*this is a univeral selector it implies on all tag*/
+        *{
+            padding: 0; /*removes default padding and all*/
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+            /*can also add width and height to your box*/
+            /* width:200px; */
+            /* height:200px; */ 
+            background-color: blueviolet;
+            border-style:solid;
+            border-color: black;
+            border-width: 4px;
+            border-radius: 50px; /*curves the corner*/
+            /*can also add border only to specific edge*/
+            margin: 20px;
+        }
+        #firstpara{
+            background-color: rgb(214, 250, 33);
+            width:300px;
+            /*Short hand nottation for borer*/
+            border: dashed rgb(0, 0, 0) 2px;
+            /*if u want to curve only singlr corner
+            then select the particular corner like this*/
+            border-bottom-right-radius: 20px; 
+            padding: 20px 15px;
+            margin: 30px 15px 20px 15px;
+        }
+        #secondpara{
+            background-color: rgb(143, 141, 141);
+            width: 300px;
+            border: solid black 2px;
+            /*PADDING*/ /*Margin is also same as padding*/
+
+            /*padding: 30px;*/
+            /* in this all sides 30 30 30 30*/
+
+            /* padding: 30px 20px; */
+            /* in this top and bottom = 30 , left and right =20 */
+            padding-top: 10px;
+            padding-right: 20px;  /*can do it individualy too*/
+            padding-bottom: 30px;
+            padding-left: 40px;
+
+            /*Short hand nottation for padding*/
+            /*its done clockwise (top right bottom left)*/
+            /* padding: 10px 20px 30px 40px; */
+            margin:20px 15px;
+        }
+        #thirdpara{
+            background-color: rgb(146, 243, 146);
+            border:solid black 2px;
+            width:300px;
+            padding:20px 15px;
+            margin: 20px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <p id="firstpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cum omnis amet unde, quae voluptatem tempore incidunt dignissimos culpa doloremque nostrum laborum? Aliquid magni adipisci, accusantium repellendus ut totam ipsam!</p>
+
+    <p id="secondpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae unde laboriosam voluptatem culpa explicabo a minima optio ea dignissimos? Quis, dolorem debitis commodi culpa voluptas voluptatibus pariatur sit libero dolorum?</p>
+
+    <p id="thirdpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, possimus? Exercitationem eos dolor error eaque nobis, voluptatem quae porro similique hic et perspiciatis nisi recusandae, pariatur itaque cum, cumque deserunt!</p>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            background-color: rgb(151, 203, 162);
+            border:3px solid rgb(0, 0, 0);
+            height:800px;
+            display:flex;
+                    /*by using flex we can allign boxes colomn or row wise*/
+                    /*by default flex-direction is row*/
+
+            flex-direction: row;
+
+                    /*by reversing the order of the boxes get reversed*/
+            /* flex-direction: row-reverse; */
+                    /*flex wrap make sure that boxes don't get squizzed while toogle*/
+                    /*while wrap boxes start adjusting downwards and dont loose their size (in row)  until the space is available*/
+
+            /* flex-wrap: wrap; */
+
+                    /*in reverse it works same but reverses the order of boxes*/
+            /* flex-wrap:wrap-reverse; */
+
+                    /*short hand notation*/
+
+            /* display: flex;
+            flex-flow: row-reverse wrap; */
+
+                    /*judtify-content*/
+                    /*in this we can manage spaces be the boxes by using diff-diff space properties*/
+
+                    /* like while rows main axis is horizontaland while column main axis is vertical*/ 
+
+            justify-content:space-evenly;
+            justify-content: center;
+
+                    /*Align item*/
+                    /*it is used to align items*/
+            align-items: center;
+
+                    /*Align-content*/
+                    /*in align content makes sure that after wrapping boxes dont go down(baseline of the parent box)*/
+            align-content: center;
+                    /*u can use diff properties like start end spacing also here i used center as per the above code*/
+        }
+        .box{
+            width:100px;
+            height:100px;
+            border:1px solid black;
+            margin:5px;
+        }
+        #box1{
+            background-color: yellowgreen;
+            /* flex-shrink:2; */
+                    /*speed of shriking of the box*/
+            /* flex-grow: 3; */
+                    /*speed of growing of the box*/
+            align-self: start;
+                    /*it aligns box but in x-axis*/
+            order:5;
+                    /*it manupulate the order of the box*/
+        }
+        #box2{
+            background-color: violet;
+        }
+        #box3{
+            background-color: tomato;
+        }
+        #box4{
+            background-color: teal;
+            order:-1;
+        }
+        body{
+            background-color: rgb(26, 25, 25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+    </div>
+</body>
+</html>

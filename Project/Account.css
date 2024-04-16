@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    background-color: rgb(40, 40, 40);
+}
+.account{
+    border:1px solid white ;
+    height:100%;
+    margin:0px 50px;
+}
+.accountHead{
+    /* border:1px solid white; */
+    border-radius: 5px;
+    margin:6px;
+    height:35px;
+    background-color: rgb(20, 20, 20);
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+}
+.headLeft{
+    color:white;
+    height:20px;
+    display:flex;
+    width:50%;
+}
+.headLeft img{
+    width:15px;
+    height:15px;
+    margin:0px 10px;
+
+}
+.headRight{
+    color:lightseagreen;
+    padding:5px;
+    height:20px;
+    display:flex;
+    justify-content: end;
+    width:50%;
+}
+.headRight img{
+    width:20px;
+    height:20px;
+    margin:0px 10px;
+}
+.transaction{
+    /* border:1px solid white; */
+    border-radius: 5px;
+    color:white;
+    margin:6px;
+    background-color: rgb(20, 20, 20);
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding:15px;
+}
+.tHead{
+    width:100%;
+    padding:5px;
+    /* border:1px solid white; */
+    display:flex;
+    align-items:center;
+    margin-bottom: 6px;
+}
+.summary{
+    color:lightseagreen;
+    width:50%;
+    margin-left: 45%;
+    display:flex;
+    justify-content: end;
+}
+.summary img{
+    width:20px;
+    height:20px;
+    margin:0px 10px;
+    border-radius: 35px;
+}
+.balance{
+    width:95%;
+    height:50%;
+    margin:10px;
+    /* border: 1px solid white; */
+    display:flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding:5px;
+    background-color: black;
+}
+.totalBalance{
+    display:flex;
+    align-content: center;
+    flex-direction: column;
+    padding:20px;
+    padding-left: 0px;
+    width:30%;
+}
+.options{
+    width:70%;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+.options span{
+    color:lightseagreen;
+    margin:10px;
+    padding:10px;
+    border:1px solid lightseagreen;
+}
+@media (max-width:500px){
+    .options span{
+        justify-content:space-around;
+        place-content: center;
+        flex-direction:column;
+    }
+}
+.options span:hover {
+    background-color: rgb(8, 8, 84);
+}
+.tFoot{
+    color:lightseagreen;
+    display:flex;
+    align-items: center;
+}
+.tFoot img{
+    width:20px;
+    height:20px;
+    margin:0px 10px;
+    border-radius: 35px;
+}
+.dash{
+    /* border:1px solid white; */
+    border-radius: 5px;
+    color:white;
+    margin:6px;
+    background-color: rgb(20, 20, 20);
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding:5px;
+}
+.dashHead{
+    width:95%;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+#dashH{
+    width:40px;
+    height:40px;
+    margin:0px 10px;
+    border-radius: 35px;
+}
+#dashN{
+    margin-left: 10px;
+    padding:2px;
+    font-size: small;
+    background-color: black;
+}
+.dashTable{
+    width:95%;
+    gap:13px;
+    display:flex;
+    padding:10px;
+}
+.dashTable img{
+    width:40px;
+    height:40px;
+    margin:0px 10px;
+    border-radius: 5px;
+}
+.traders{
+    background-color: black;
+    border-radius: 10px;
+    padding:10px;
+    gap:10px;
+    display:flex;
+    width:30%;
+    flex-direction: column;
+}
+.traders:hover {
+    background-color: rgb(6, 6, 28);
+}
+.pay{
+    /* border:1px solid white; */
+    border-radius: 5px;
+    color:white;
+    margin:6px;
+    background-color: rgb(20, 20, 20);
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding:5px;
+}
+.payHead{
+width:95%;
+display:flex;
+align-items: center;
+flex-direction: column;
+justify-content: start;
+}
+.payTable{
+    width:95%;
+    gap:13px;
+    display:flex;
+    padding:10px;
+}
+.payTable img{
+    width:40px;
+    height:40px;
+    margin:0px 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.pledging{
+    background-color: black;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    padding:10px;
+    gap:10px;
+    width:50%;
+    margin-top: 25px;
+}
+.pledging:hover {
+    background-color: rgb(6, 6, 28);
+}
+.settings{
+    /* border:1px solid white; */
+    border-radius: 5px;
+    color:white;
+    margin:6px;
+    background-color: rgb(20, 20, 20);
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding:5px;    
+}
+.more{
+    /* background-color: black; */
+    border-radius: 10px;
+    margin-top: 25px;
+    display:grid;
+    padding: 2rem;
+    gap:1rem;
+    width:90%;
+    grid-template-areas: 
+    "content1 content2"
+    "content3 content4";
+}
+.more img{
+    width:40px;
+    height:40px;
+    margin:0px 10px;
+    margin-right: 20px;
+    border-radius: 25px;
+}
+.profile{
+    background-color: black;
+    border-radius: 10px;
+    display:grid;
+    align-items: center;
+    padding:10px;
+    gap:10px;
+    /* border:1px solid; */
+}
+#content1{
+    grid-area:content1;
+}
+#content2{
+    grid-area:keyboard;
+}
+#content3{
+    grid-area:about;
+}
+#content4{
+    grid-area:support;
+}
+.profile:hover {
+    background-color: rgb(6, 6, 28);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    <form>
+        <lable for="name">Name:</lable>
+        <br>
+        <input type="text" id="name" name="name">
+        <br>
+        <lable for="EmailID">Email:</lable>
+        <br>
+        <input type="email" id="emailID" name="email">
+        <br>
+        <lable for="phone">Phone:</lable>
+        <br>
+        <input type="tel" id="phone" name="number">
+        <br><br>
+        <lable for="rusume">Resume:</lable>
+        <br>
+        <input type="file" id="resume" name="file">
+         <br><br>
+        <lable for="experience">Experience(years):</lable>
+         <input type="number" name="exp" id="experience" min="0" max="50">
+        <br>
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="skill" id="html">
+            <br>
+            <lable for="html">HTML</lable>
+            <br><br>
+            <input type="checkbox" name="skill" id="CSS">
+            <br>
+            <lable for="CSS">CSS</lable>
+            <br><br>
+            <input type="checkbox" name="skill" id="JAVA">
+            <br>
+            <lable for="JAVA">JAVA</lable>
+        </fieldset>
+        <br><br>
+        <lable for="edu">Highest Education:</lable>
+        <select>
+            <option value="high school">High School</option>
+            <option value="graduation">Graduation</option>
+            <option value="Masters">Masters</option>
+        </select>
+        <br><br>
+        <lable for="availability">Availability:</lable>
+        <br><br>
+        <lable for="full-time">Full-Time</lable>
+        <input type="radio" id="full-time" name="availability">
+        <br>
+        <lable for="part-time">Part-Time</lable>
+        <input type="radio" id="Part-time" name="availability">
+        <br><br>        
+        <lable for="comments">Additional Comments:</lable>
+        <br>
+        <textarea id="comments"  rows="2" cols="25" placeholder="enter here..."></textarea>
+        <br>
+        <button>Submit Application</button>
+    </form>
+</body>
+</html>

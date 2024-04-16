@@ -1,0 +1,56 @@
+/* Types of Selectors */
+
+/* Element */
+h1{
+    font-size:smaller;
+    text-align:center;
+}
+p{
+    color:darkcyan;
+}
+/*ID*/
+#third{
+    color:white;
+    background-color: black;
+}
+#fourth{
+    background-color: black;
+}
+/*Class*/
+.para{
+    color:red
+}
+/*Group*/
+p,h2{
+    text-align: center;
+}
+
+/*paricular*/
+p.para{
+    font-style:italic ;
+    font-size: 20px;
+    color:red;
+    font-family:cursive;
+    font-weight:900;
+    line-height:4;
+}
+#para1{
+    background-color: purple;
+    color:orange;
+}
+#para2{
+    background-color: rgb(115, 225, 11);
+}
+#para3{
+    background-color: rgba(223, 79, 2, 0.484);
+    /*here last value represents the alpa which controls tranperancy*/
+    font-weight: 600;
+}
+#para4{
+    background-color: #20a8f695;
+    color:black;
+}
+#para5{
+    background-color: hsl(258,100%,50%);
+    color:white;
+}

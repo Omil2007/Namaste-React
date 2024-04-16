@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    span{
+        border: 2px solid green;
+        width: 200 px;
+        height: 150 px;
+        margin: 30px 15px 20px 15px;
+        padding: 10px;
+        /*span is an block ele so can not add margin  and padding in it by default */
+        /*Also can not add custom height and width*/
+        /*if u want to then */
+        display: block;
+        /*by diplaying it block u can add height and width and horizontal margin and padding but no vertical*/
+    }
+    p{
+        border: solid black 2px;
+        /*p is a block ele , we can add margin and padding in it */
+        margin :20px; 
+        padding: 20px 15px;
+        width: 200px;
+        height: 50px;
+        /*and if u want u can also convert it into inline*/
+        /* display: inline;*/
+
+        /*if u want property of block and inline's height and width */
+        /* display: inline-block; */
+    }
+</style>
+<body>
+    <span>Tagde hone par dhyan do</span>
+    <p>Roj ka kaam Roj</p>
+</body>
+</html>
